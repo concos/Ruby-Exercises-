@@ -1,7 +1,7 @@
 def conversion(op)
   case op 
-	when '1'
-		'add'
+    when '1'
+        'add'
 	when '2'
 		'subtract'
 	when '3'
@@ -23,6 +23,8 @@ def symbol(sym)
 		'/'
 	end
 end
+
+while true 
 
 puts "What is your name:"
 name = gets.chomp 
@@ -48,4 +50,12 @@ else operator == '4'
 end 
 
 puts "You chose to #{conversion(operator)} #{first_number} #{symbol(operator)} #{second_number} Result: #{result}"
- 
+puts " " 
+puts "Would you like to enter another operation? yes or no"
+new = gets.chomp 
+
+    if new == 'no'
+    break 
+    end 
+
+end 
